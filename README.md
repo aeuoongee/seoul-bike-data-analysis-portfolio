@@ -1,158 +1,125 @@
-\# Seoul Bike Data Analysis 🚲
+# Seoul Bike Usage Data Analysis 
 
+Python을 활용하여 서울 공공자전거 데이터를 분석하고
+시간, 요일, 날씨 요인이 자전거 이용량에 어떤 영향을 미치는지 탐색적으로 분석한 프로젝트입니다.
 
+---
 
-\## Project Overview
+# Project Overview
 
-This project analyzes Seoul public bike rental data to identify usage patterns.
+본 프로젝트에서는 서울 공공자전거 대여 데이터를 활용하여
+자전거 이용 패턴을 데이터 분석을 통해 파악하는 것을 목표로 합니다.
 
+특히 다음과 같은 요인들이 자전거 이용량에 어떤 영향을 미치는지 분석했습니다.
 
+* 시간대별 이용 패턴
+* 요일별 이용 패턴
+* 기온과 이용량의 관계
+* 습도와 이용량의 관계
+* 변수 간 상관관계
 
-The analysis focuses on how time, weekday, and weather conditions affect bike rental demand.
+---
 
+# Tools
 
+* Python
+* Pandas
+* Matplotlib
 
-\## Tools
+---
 
-\- Python
+# Dataset
 
-\- Pandas
+서울 공공자전거 대여 데이터와 기상 데이터를 활용했습니다.
 
-\- Matplotlib
+주요 변수
 
+* **datetime** : 날짜 및 시간
+* **temperature** : 기온
+* **humidity** : 습도
+* **weekday** : 요일
+* **count** : 자전거 대여 수
 
+---
 
-\## Dataset
+# Analysis
 
-The dataset contains bike rental data along with weather information.
+다음과 같은 분석을 수행했습니다.
 
+1. 월별 자전거 이용량 분석
+2. 시간대별 자전거 이용량 분석
+3. 요일별 자전거 이용량 분석
+4. 기온과 이용량 관계 분석
+5. 습도와 이용량 관계 분석
+6. 변수 간 상관관계 분석
 
+---
 
-Main variables used in the analysis:
+# Visualization
 
+## Monthly Bike Usage
 
+![Monthly Usage](images/monthly_usage.png)
 
-\- datetime : date and time
+## Hourly Bike Usage
 
-\- temperature : temperature
+![Hourly Usage](images/hourly_usage.png)
 
-\- humidity : humidity
+## Bike Usage by Weekday
 
-\- weekday : day of the week
+![Weekday Usage](images/weekday_usage.png)
 
-\- count : bike rental count
+## Temperature vs Bike Usage
 
+![Temperature Usage](images/temperature_usage.png)
 
+## Humidity vs Bike Usage
 
-\## Analysis
+![Humidity Usage](images/humidity_usage.png)
 
+## Correlation Heatmap
 
+![Correlation Heatmap](images/correlation_heatmap.png)
 
-The following analyses were performed:
+---
 
+# Key Findings
 
+분석 결과 다음과 같은 패턴을 확인할 수 있었습니다.
 
-1\. Monthly bike usage analysis
+* 자전거 이용량은 **출퇴근 시간대에 증가하는 경향**을 보였습니다.
+* **평일 이용량이 주말보다 높은 경향**이 나타났습니다.
+* **기온이 높을수록 자전거 이용량이 증가하는 경향**이 나타났습니다.
+* **습도가 높은 경우 자전거 이용량이 다소 감소하는 경향**을 보였습니다.
+* 날씨 변수와 자전거 이용량 사이에는 일정 수준의 **상관관계**가 존재했습니다.
 
-2\. Hourly bike usage analysis
+이러한 결과를 통해 시간 요인과 날씨 요인이
+공공 자전거 이용 패턴에 영향을 미친다는 것을 확인할 수 있었습니다.
 
-3\. Bike usage by weekday
+---
 
-4\. Temperature vs bike rental demand
-
-5\. Humidity vs bike rental demand
-
-6\. Correlation analysis between variables
-
-
-
-\## Visualization
-
-
-
-\### Monthly Bike Usage
-
-!\[Monthly Usage](images/monthly\_usage.png)
-
-
-
-\### Hourly Bike Usage
-
-!\[Hourly Usage](images/hourly\_usage.png)
-
-
-
-\### Temperature vs Bike Usage
-
-!\[Temperature Usage](images/temperature\_usage.png)
-
-
-
-\### Humidity vs Bike Usage
-
-!\[Humidity Usage](images/humidity\_usage.png)
-
-
-
-\## Key Findings
-
-
-
-\- Bike usage increases during commuting hours.
-
-\- Higher temperatures tend to increase bike rentals.
-
-\- High humidity slightly reduces bike usage.
-
-\- Weekday usage is generally higher than weekend usage.
-
-
-
-These results suggest that both time-related and weather-related factors influence public bike demand.
-
-
-
-\## Project Structure
-
-
-
-```
+# Project Structure
 
 seoul-bike-data-analysis-portfolio
 
-│
+├ data
+│ └ Seoul_public_bike_data.csv
 
-├── data
+├ images
+│ ├ monthly_usage.png
+│ ├ hourly_usage.png
+│ ├ weekday_usage.png
+│ ├ temperature_usage.png
+│ ├ humidity_usage.png
+│ └ correlation_heatmap.png
 
-│   └── Seoul\_public\_bike\_data.csv
+├ notebook
+│ └ bike_analysis.ipynb
 
-│
+└ README.md
 
-├── images
+---
 
-│   ├── monthly\_usage.png
+# Author
 
-│   ├── hourly\_usage.png
-
-│   ├── temperature\_usage.png
-
-│   └── humidity\_usage.png
-
-│
-
-├── notebook
-
-│   └── bike\_analysis.ipynb
-
-│
-
-└── README.md
-
-```
-
-
-
-\## Author
-
-Data analysis project using Python and public data.
-
+Python을 활용한 데이터 분석 포트폴리오 프로젝트
