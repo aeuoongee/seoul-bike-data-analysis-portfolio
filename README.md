@@ -100,6 +100,7 @@ Python을 활용하여 서울 공공자전거 데이터를 분석하고
 
 # Project Structure
 
+```
 seoul-bike-data-analysis-portfolio
 
 ├ data
@@ -117,7 +118,7 @@ seoul-bike-data-analysis-portfolio
 │ └ bike_analysis.ipynb
 
 └ README.md
-
+```
 ---
 
 # Author
